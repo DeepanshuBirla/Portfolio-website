@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="portfolio-container">
+
+    <!-- Navigation -->
+    <ul class="navlist">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+    </ul>
+
+    <!-- Home Section -->
+    <section id="home" class="left-container">
+      <div class="icons">
+  <a href="https://www.facebook.com/yourprofileid" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.linkedin.com/in/yourprofileid" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://twitter.com/yourprofileid" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://codepen.io/yourusername" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+</div>
+
+      <div class="content">
+        <p class="intro">Hi! I Am <span>Deepanshu Birla</span></p>
+        <h1>Web Developer.</h1>
+        <p class="detail">I build fast and modern websites using HTML, CSS, JavaScript, and React.</p>
+        <div class="btn-container">
+          <button>Hire Me</button>
+          <button>View Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Design -->
+    <div class="right-container">
+      <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <section id="work" class="section">
+    <h2>Work</h2>
+    <p>I have worked as a Web Developer Intern at Ram Antivirus Pvt. Ltd., building cybersecurity dashboards and user interfaces.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I am a passionate full stack developer with hands-on experience in MERN stack. I enjoy solving real-world problems with code.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>E-Commerce System:</strong> React, Node.js, MongoDB</li>
+      <li><strong>Portfolio Website:</strong> HTML, CSS, JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p>I offer web design, front-end development, and portfolio building services for students and small businesses.</p>
+  </section>
+
+  <!-- Bio Section -->
+  <section id="bio" class="section">
+    <h2>Bio</h2>
+    <p>I am Deepanshu Birla, I have completed postgraduation in  MCA. I love creating innovative Web Developer designs and scalable web apps.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js, Node.js</li>
+      <li>MongoDB, Git, Tailwind CSS</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <p>6-month internship experience in Full Stack Development at Ram Antivirus Pvt. Ltd.</p>
+  </section>
+
+  <!-- Smooth Scroll Script (Optional) -->
+  <script>
+    document.querySelectorAll('.navlist a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
